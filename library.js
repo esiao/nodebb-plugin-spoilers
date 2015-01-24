@@ -8,6 +8,7 @@ plugin.parse = function(data, callback) {
 	}
 	// this regex could be better
 	data.postData.content = data.postData.content
+		.replace(/<p>!! *([\S\s]*?)<\/p>/gm, '</blockquote><blockquote class="spoiler-toggle"><span>Spoiler:</span><p class="spoiler-content">$1</p></blockquote><blockquote>')
 		.replace(/<p>! *([\S\s]*?)<\/p>/gm, '</blockquote><blockquote class="spoiler"><p>$1</p></blockquote><blockquote>')
 		.replace(/<blockquote>\s*<\/blockquote>/g, '');
 

@@ -6,6 +6,11 @@ Allows you to embed spoilers in NodeBB post content. Just use the following synt
 >! spoiler text here
 ```
 
+You can use this one for a more conventional Spoiler (as seen on phpbb).
+```
+>!! spoiler text here
+```
+
 ## Installation
 
     npm install nodebb-plugin-spoilers
